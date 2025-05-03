@@ -1,0 +1,9 @@
+services:
+  finance-ai:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./app:/app
+      - ./data:/app/data          # CSVs
+      - ./models:/models          # GGUF models stay on host

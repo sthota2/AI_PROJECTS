@@ -1,0 +1,9 @@
+# Don't include big, local-only stuff
+*.gguf
+*.csv
+*.log
+models/
+app/data/
+venv/
+__pycache__/
+.ipynb_checkpoints/
